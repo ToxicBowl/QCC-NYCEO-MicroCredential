@@ -1,8 +1,10 @@
 $(document).ready(function(){
   $(".header").click(function(){
-    $(".topnav").hide(5000,alert("the nav bar is gone.");
+    $(".topnav").hide(5000, function(){
+      alert("the nav bar is gone.");
+    });
   });
-  $("#show").click(function(){
+  $("#demo").click(function(){
     $(".topnav").show(5000,function(){
       alert("The navbar is back.");
     });
